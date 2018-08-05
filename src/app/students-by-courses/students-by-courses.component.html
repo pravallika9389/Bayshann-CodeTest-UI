@@ -1,0 +1,20 @@
+<div style="background-color: white;">
+
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Subject Code</th>
+          <th>Description</th>
+          <th>Student ID</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><h5 *ngIf="studentsList.length == 0 && loading == false"></h5></tr>
+        <tr *ngFor="let items of studentsList">
+          <td>{{items.subject_code}}</td>
+          <td>{{items.subject_desc}}</td>
+          <td>{{items.student_id}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
